@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+          //Bài 3
+        document.write("<br>");
+        var trongLuong = prompt("Nhập trọng lượng cơ thể (kg): ");
+        var chieuCao = prompt("Nhập chiều cao (m): ");
+        var BMI = trongLuong / (chieuCao**2);
+        if(isNaN(trongLuong)==true || isNaN(chieuCao)==true){    //isNaN => kí tự =>true  số => false
+                alert("Thông số không hợp lệ");
+        } else{
+                if(BMI<=18.5){
+                    alert("Thiếu cân");
+                } else if(BMI>=18.5 && BMI <25){
+                    alert("Bình thường");
+                } else if(BMI>=25 && BMI <30){
+                    alert("Thừa cân");
+                } else{
+                    alert("Béo phì");
+                }
+        }
+    </script>
+</body>
+</html>

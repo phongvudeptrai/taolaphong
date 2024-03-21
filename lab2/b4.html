@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <script>
+        
+        //Bài 4
+        const theList = ['Lauren','Kevin', true, 35, null, undefined, ['one', 'two']];
+
+        // Xóa phần tử đầu tiên và cuối cùng của mảng
+        theList.shift();  // xóa phần tử đầu tiên
+        theList.pop();    // xóa phần tử cuối cùng
+        console.log(theList);
+
+       // thêm 'FIRST' vào đầu mảng
+        theList.unshift('FIRST');
+        console.log(theList);
+
+        // thêm 'hello world' vào vị trí thứ 4 của mảng
+        theList.splice(3,0,'hello world');
+        console.log(theList);
+
+        // thêm 'middle' vào vị trí thứ 3
+        theList.splice(2,0,'middle');
+        console.log(theList);
+        
+        // thêm từ 'last' vào cuối mảng
+        theList.push('LAST');
+        console.log(theList);
+    </script>
+</body>
+</html>
